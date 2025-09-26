@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Login Protheus WEB - Automatize seu Acesso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --dark-color: #2c3e50;
+      --light-color: #f8f9fa;
+      --text-color: #333;
+      --white-color: #ffffff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--light-color);
+      color: var(--text-color);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--white-color);
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: var(--dark-color);
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+      background-color: var(--white-color);
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      color: var(--dark-color);
+      margin: 0 0 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5em;
+      color: var(--dark-color);
+      margin-bottom: 60px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .feature-card {
+      background-color: var(--white-color);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-card .icon {
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .feature-card h3 {
+      font-size: 1.5em;
+      color: var(--dark-color);
+      margin-bottom: 15px;
+    }
+
+    /* Security Section */
+    .security {
+      padding: 80px 0;
+      background-color: var(--white-color);
+      text-align: center;
+    }
+
+    .security .icon {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .security p {
+      max-width: 700px;
+      margin: 20px auto 0;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--dark-color);
+      color: #bdc3c7;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      color: var(--white-color);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .section-title {
+        font-size: 2em;
+      }
+
+      .logo {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">Auto Login Protheus WEB</div>
+      <a href="#" class="cta-button">Instalar Agora</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Acesse o Protheus WEB em um piscar de olhos.</h1>
+        <p>Diga adeus à digitação repetitiva. A extensão Auto Login Protheus WEB automatiza seu acesso de forma rápida,
+          simples e segura.</p>
+        <a href="#" class="cta-button">Adicionar ao Chrome - É Grátis!</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Por que usar nossa extensão?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3>Velocidade Relâmpago</h3>
+            <p>Chega de perder tempo. A extensão preenche seus dados e clica nos botões, colocando você dentro do
+              sistema em segundos.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Segurança Total</h3>
+            <p>Suas credenciais são salvas com segurança no seu próprio navegador. Nenhum dado é enviado para servidores
+              externos. Sua privacidade é garantida.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                <path d="M12 12v9"></path>
+                <path d="m8 17 4 4 4-4"></path>
+              </svg>
+            </div>
+            <h3>Gerenciamento Fácil</h3>
+            <p>Salve e gerencie logins para múltiplos ambientes (produção, teste) com uma interface simples e intuitiva.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="security">
+      <div class="container">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h2 class="section-title">Seus dados, suas regras.</h2>
+        <p>Nós levamos sua privacidade a sério. A extensão "Auto Login Protheus WEB" foi construída com o princípio de
+          que seus dados devem pertencer e permanecer com você. Todas as informações salvas são armazenadas localmente
+          no seu dispositivo, e nós nunca teremos acesso a elas.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Auto Login Protheus WEB. Todos os direitos reservados.</p>
+      <p>
+        <a href="privacidade.html">Política de Privacidade</a> |
+        <a href="mailto:seu-email@exemplo.com">Contato</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
